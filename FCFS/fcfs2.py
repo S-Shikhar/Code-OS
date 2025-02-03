@@ -1,3 +1,4 @@
+# without any functions
 n = int(input("Enter number of processes: "))
 at = [int(input(f"Enter arrival time for process {i + 1}: ")) for i in range(n)]
 bt = [int(input(f"Enter burst time for process {i + 1}: ")) for i in range(n)]
