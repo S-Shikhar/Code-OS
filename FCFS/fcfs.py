@@ -1,3 +1,5 @@
+# with function
+
 def findWaitingTimeFCFS(bt, at):
     n = len(bt)
     wt = [0] * n
