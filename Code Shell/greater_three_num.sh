@@ -1,9 +1,11 @@
-a=10
-b=20
+read -p "Enter 3 numbers: " a b c
 
-if [ $a -lt $b ]
-    then
-    echo "a is less than b"
+if [ $a -gt $b ] && [ $a -gt $c ]
+then
+    echo "$a is the largest number"
+elif [ $b -gt $a ] && [ $b -gt $c ]
+then
+    echo "$b is the largest number"
 else
-    echo "b is less than a"
+    echo "$c is the largest number"
 fi
