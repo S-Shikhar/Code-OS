@@ -10,14 +10,13 @@ for i in range(n):
     
 wt = [0] * n
 ct = [0] * n
+tat = [0] * n
 
 ct[0] = at[0] + bt[0]
 
 for i in range(1, n):
     ct[i] = max(ct[i - 1], at[i]) + bt[i]
     wt[i] = ct[i] - at[i] - bt[i]
-
-tat = [0] * n
 
 for i in range(n):
     tat[i] = bt[i] + wt[i]
